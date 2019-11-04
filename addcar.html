@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<form action="/addCar" id="carForm">
+    <table>
+        <tr>
+            <td>Típus</td>
+            <td><input type="text" class="inputField" name="name" required="required" placeholder="Astra"></td>
+        </tr>
+        <tr>
+            <td>Fogyasztás</td>
+            <td><input type="number" class="inputField" name="consumption" min="0" step="0.01" max="100" placeholder="8.5 liter/100km"></td>
+        </tr>
+        <tr>
+            <td>Szín</td>
+            <td><input type="text" class="inputField" name="color" required="required" placeholder="black"></td>
+        </tr>
+        <tr>
+            <td>Gyártó</td>
+            <td><input list="manufacturers" class="inputField" name="manufacturer" required="required" autocomplete="off" placeholder="Opel">
+                <datalist id="manufacturers">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Elérhető</td>
+            <td><input type="number" class="inputField" name="available" min="0" required="required" placeholder="10"></td>
+        </tr>
+        <tr>
+            <td>Évjárat</td>
+            <td><input type="number" id="year" class="inputField" name="year" min="0" required="required" placeholder="1990"></td>
+        </tr>
+        <tr>
+            <td>Lóerő</td>
+            <td><input type="number" class="inputField" name="horsepower" min="0" required="required" placeholder="40"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" class="submitButton" name="insert" value="Autó hozzáadása">
+            </td>
+        </tr>
+    </table>
+</form>
+<script>
+    carHandler();
+</script>
+</html>

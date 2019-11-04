@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Autó adatbázis</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#fafafa">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Open+Sans&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+</head>
+
+<body>
+
+<div id="alertBox"><p></p></div>
+
+<header>
+    <div id="menuBar">
+        <ul>
+            <li><a class="menuButton" data-pagename="Autó adatbázis" href="home.html">Home</a></li>
+            <li><a class="menuButton" data-pagename="Gyártók" href="manufacturers.html">Gyártók</a></li>
+            <li><a class="menuButton" data-pagename="Autók" href="cars.html">Autók</a></li>
+            <li class="dropdown">
+                <a class="dropDownButton" href="javascript:void(0)">Hozzáadás <i class="down"></i></a>
+                <div class="dropDown">
+                    <a class="menuButton" data-pagename="Gyártó regisztráció" href="addmanufacturer.html">Gyártó</a>
+                    <a class="menuButton" data-pagename="Autó regisztráció" href="addcar.html">Autó</a>
+                </div>
+            </li>
+
+            <li id="pageTitle">Autó adatbázis</li>
+        </ul>
+    </div>
+</header>
+
+<section id="content"></section>
+
+<footer></footer>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

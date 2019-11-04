@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<form action="/addManufacturers" id="manufacturerForm">
+    <table>
+        <tr>
+            <td>Márkanév</td>
+            <td><input type="text" class="inputField" name="name" required="required" placeholder="Tesla"></td>
+        </tr>
+        <tr>
+            <td>Származás</td>
+            <td><input list="countries" class="inputField" name="country" required="required" placeholder="Hungary" autocomplete="off">
+                <datalist id="countries">
+                </datalist>
+            </td>
+        </tr>
+        <tr>
+            <td>Alapítás éve</td>
+            <td><input type="date" class="inputField" name="founded" required="required"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <input type="submit" class="submitButton" value="Gyártó hozzáadása">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+    manufacturerHandler();
+</script>
+</html>
